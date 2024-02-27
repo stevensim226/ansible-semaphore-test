@@ -8,4 +8,4 @@
       msg: "{{ semaphore_vars }}"
   - name: Print out the username
     ansible.builtin.debug:
-      msg: "{{ semaphore_vars.username }}"
+      msg: "{{ semaphore_vars.task_details.username }}"
