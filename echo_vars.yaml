@@ -1,0 +1,8 @@
+---
+- name: Print out semaphore CI/CD vars
+  hosts: localhost
+
+  tasks:
+  - name: Print out the vars
+    ansible.builtin.debug:
+      msg: "{{ semaphore_vars }}"
